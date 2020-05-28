@@ -4,25 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manipulating HTML - jQuery</title>
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
+    <!-- Organizer Container (for organization and looks)-->    
     <div id="organizer" class="container mx-2 mt-4">
+        <!-- Input Group for objective 2 alerting (for looks) -->
         <div class="input-group w-50 my-2">
             <input type="text" class="form-control" placeholder="Alert Text" id="textSubmit">
             <div class="input-group-append">
                 <button id="button2" class="btn btn-primary">Alert: Objective 2</button>
             </div>
         </div>
+        <!-- Div for objective 3 (jumbotron makes it easier to see the changes) -->
         <div id="box" class="jumbotron w-50 mb-3 mt-3">Objective 3: Background changes color </div>
-
+        <!-- List container for the buttonName and Friends list to be organized together -->
         <div id="listContainer" class="my-3">
             <button id="buttonList" class="btn btn-primary">Add Friends: Objective 6</button>
             <ul id="list" class="list-group my-3"></ul>
         </div>
     </div>
+
+    <!-- Source Files -->
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="app.js"></script>
 </body>
